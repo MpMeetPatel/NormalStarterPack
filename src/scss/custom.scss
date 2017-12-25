@@ -1,0 +1,59 @@
+/*===========================================================
+                          VARIABLES
+=============================================================*/
+
+//main colors
+$purple-color: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%);
+$purple-color-inverse: linear-gradient( 135deg, #3813C2 10%, #FF6FD8 100%);
+
+//Additional colors
+$blue-color: #3813C2;
+$blue-gradient: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+$dark-blue-gradient: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%);
+/*===========================================================
+                          MIXINS
+=============================================================*/
+
+@mixin gradText($Bgcolor) {
+  background: $Bgcolor;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+
+/*===========================================================
+                          BODY(General as well)
+=============================================================*/
+
+body,
+html {
+  font-family: 'Maven Pro', serif, sans-serif;
+  font-weight: 100;
+  width: 100%;
+  line-height: normal;
+  position: relative;
+  overflow-x: hidden;
+  .button-material {
+    text-decoration: none;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: 0;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+}
+
+
+
+
