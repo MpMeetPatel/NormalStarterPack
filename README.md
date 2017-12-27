@@ -1,2 +1,2 @@
 # NormalStarterPack
-Norma lStarter Pack for begginer
+Normal Starter Pack for begginer
